@@ -6,6 +6,8 @@ import {useState} from "react";
 const Auth = () => {
     const [selectedUser, setSelectedUser] = useState<IUser>()
 
+    //Bei der Auth ist es so, wenn ich mit der Select box einen user wähle und auf Login drücke, wird die LOGIN message mit dem jeweiligen user ans backend geschickt, das löst dann das handleLogin im backend aus, welches mir ans frontend
+    //dann wieder eine Login message, mit dem richtigen user, trainer und userdaten schickt. ganz easy.
     const handleLogin = (user:IUser) => {
             WSHandler.sendMessage({
                 type: "LOGIN",

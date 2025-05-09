@@ -3,6 +3,7 @@ import {AppLogic} from "../services/AppLogic";
 import {WebSocket} from "ws";
 import {IUser} from "../models/IUser";
 
+//hier werden die Nachrichten die aus dem Frontend kommen verarbeitet, versteht sich glaub ich von selbst ^^
 class Dispatcher {
     static dispatch(msg: IMessage, socket: WebSocket) {
         switch (msg.type) {

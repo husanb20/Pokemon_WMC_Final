@@ -1,4 +1,6 @@
-# Notenliste RBAM
-[Angabe am SharePoint](https://htlkaindorfat.sharepoint.com/:w:/r/sites/VK_LA1_demo-Alle_Klassen_VK_24/Shared%20Documents/Alle_Klassen_VK_24/WMC_5CHIF_readonly_24/3_WebSocket/wmc_5chif_notenlist_rbam_ProbePLF.docx?d=w84199fd923ee4992a1ef74fb0884f9c8&csf=1&web=1&e=5b4oUb)
+# HALLO 
 
-[Lösung am SharePoint](https://htlkaindorfat.sharepoint.com/:u:/r/sites/VK_LA1_demo-Alle_Klassen_VK_24/Shared%20Documents/Alle_Klassen_VK_24/WMC_5CHIF_readonly_24/3_WebSocket/0_L%C3%B6sungen/wmc_5chif_notenlist_rbam_vk_24_ProbePLF.zip?csf=1&web=1&e=rEKHvq)
+Prinzip von diesem Programm und Websocket:
+
+Ich schicke vom Frontend ans Backend Nachrichten, wie zb ein LOGIN oder LOGOUT. Das kommt im Backend an, wird verarbeitet, und dann schickt mein Backend samt Daten ebenfalls eine Nachricht an mein Frontend, welches diese dann
+wieder verarbeitet, und die Daten die ich aus dem backend bekomme im AppStore speichert. So kann ich mir mittels WebSocket Daten aus dem Backend holen, sie speichern und dann anzeigen lassen.

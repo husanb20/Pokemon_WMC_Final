@@ -5,6 +5,10 @@ import Dispatcher from "./Dispatcher";
 import {IMessage} from "../models/IMessage";
 import {createSocket} from "node:dgram";
 
+//der WSHandler macht quasi alles WebSocket mäßige sprich, wenn Nachrichten vom Frontend kommen ruft er den Dispatcher auf (socket.on message), und wenn die Verbindung also das browserfenster geschlossen wird,
+//löscht er die Connection dieses users.
+//weiters werden hier Messages versendet an ein oder mehrere Sockets (also an nur einen oder alle derzeit verbundenen user) und auch das login passiert hier, wo wir für eine connection den richtigen eingeloggten user
+//setzen (login). Zusätzlich gibt es das getUser / getUsers was dazu da is, damit der admin alle eingeloggten user sehen kann (also sprich unsere connections die derzeit bestehen)
 export class WSHandler {
     private readonly connections: Map<WebSocket, IUser | undefined>;
 

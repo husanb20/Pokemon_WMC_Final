@@ -3,6 +3,7 @@ import {WSHandler} from "./WSHandler";
 import {IUser} from "../models/IUser";
 import {AppLogic} from "../services/AppLogic";
 
+//Das is unser WebSocketServer, sprich hier Initialisieren wir alles und machen sobald ein client im frontend einen browser tab aufmacht eine neue connection -> zuerst mit user undefined, weil er noch nicht eingeloggt ist /siehe setUpConnection
 export class GradeListWSS {
     private readonly wss: WebSocketServer;
     private readonly wsHandler: WSHandler;
